@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Webpage with Forms, Fonts, and Iframes</title>
+    <!-- Import custom fonts using Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        form {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 3px solid #a81313;
+            border-radius: 5px;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Webpage</h1>
+
+    <h2>Forms</h2>
+    <form action="process_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for "email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Imported Fonts</h2>
+    <p>This text uses the "Open Sans" font from Google Fonts.</p>
+
+    <h2>Iframe</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube Video" frameborder="0" allowfullscreen></iframe>
+</body>
+</html>
